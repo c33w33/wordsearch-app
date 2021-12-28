@@ -4,3 +4,4 @@ cd /home/ec2-user/wordsearch-app
 virtualenv environment
 source environment/bin/activate
 sudo pip3 install -r requirements.txt
+export FLASK_APP=wordsearch-app

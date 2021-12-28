@@ -46,3 +46,6 @@ This is only a simple flask application and the file provided is just a small fi
 - using flask blueprints for additional routes
 - creating a database for the files/data to search on
 
+# Live 
+
+The live application can be found [here](wordsearch.ceewee.fun)

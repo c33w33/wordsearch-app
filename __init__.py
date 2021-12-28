@@ -22,6 +22,6 @@ def create_app(test_config=None):
         pass
 
     with app.app_context():
-        from . import routes
+        import routes
 
     return app

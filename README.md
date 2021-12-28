@@ -1,6 +1,6 @@
 # Keyword Search Web Application 
 
-This is a Keyword Search Web Application built with Flask and Bootstrap.
+This is a Keyword Search Web Application built with Flask.
 
 ## Description
 

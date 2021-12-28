@@ -2,8 +2,8 @@
 # this 1-page app routes all  get and post requests to '/'
 from flask import render_template, request
 from flask import current_app
-from forms import SearchForm
-from search import doc_path, search_doc
+from .forms import SearchForm
+from .search import doc_path, search_doc
 
 # application factory is implemented
 

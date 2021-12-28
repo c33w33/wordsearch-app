@@ -1,0 +1,35 @@
+{% extends "base.jinja2" %}
+{% block main %}
+<form method="post">
+   <div class="container">
+      <div class= " row row-cols1">
+         <div class= "col">
+            <h1>Search the Text </h1>
+            <h3>This app helps you find characters, words or phrases in the text document. </h3>
+         </div>
+      </div>
+      <div class= "row justify-content-md-center">
+         <div class="col-8">
+            <div class="form-floating mb-3">
+               {{ form.keyword }}
+               {{ form.keyword.label }}
+            </div>
+         </div>
+         <div class="col-4"> 
+            {{ form.search }}
+         </div>
+      </div>
+      <div class="row row-cols-auto">
+         <div class = "col">
+            {{ form.matchcase }}
+            {{ form.matchcase.label }}
+         </div>
+         <div class = "col">
+            {{ form.onlywhole }}
+            {{ form.onlywhole.label }}
+         </div>
+      </div>
+   </div>
+</form>
+{% include "result.jinja2" %}
+{% endblock %}

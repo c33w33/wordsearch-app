@@ -48,4 +48,4 @@ This is only a simple flask application and the file provided is just a small fi
 
 # Live 
 
-The live application can be found [here](wordsearch.ceewee.fun)
+The live application can be found [here](http://wordsearch.ceewee.fun)

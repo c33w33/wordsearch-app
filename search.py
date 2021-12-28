@@ -38,7 +38,7 @@ def search_doc(keyword, matchcase, onlywhole, doc_path):
         if keyword in line:
             details = {}
             details['Line'] = num + 1
-            details['Column/s'] = [i.start() for i in re.finditer('(?={key})'.format(key=re.escape(keyword)), line)]  # find all occurences of string
+            details['Column/s'] = [i.start() + 1 for i in re.finditer('(?={key})'.format(key=re.escape(keyword)), line)]  # find all occurences of string
             details['Text'] = line.replace(keyword, "<b>{text}</b>".format(text=keyword))
             result.append(details)
             cnt += 1  # count line matches
